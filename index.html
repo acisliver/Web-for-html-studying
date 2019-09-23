@@ -4,6 +4,21 @@
   <title>BasketBall</title>
   <meta charset="utf-8">
   <style>
+    #grid{
+      border: : 2px solid gray;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      border-right: 2px solid gray;
+      width:60px;
+      margin-top:0;
+      padding: 25px;
+      padding-left: 45px;
+    }
+    #info{
+      padding: 5px;
+    }
     body{
       margin:0;
     }
@@ -18,38 +33,28 @@
       margin:0px;
       padding: 20px;
     }
-    ol{
-      border-right: 2px solid gray;
-      width:60px;
-      margin-top:0;
-      padding: 25px;
-    }
   </style>
   </head>
   <body>
     <h1>BasketBall</h1>
-    <ol>
-      <li><a href="bb1.html">Lebron</a></li>
-      <li><a href="bb2.html">Kyrie</a></li>
-      <li><a href="bb3.html">Love</a></li>
-    </ol>
-    <!--
-    <h1>BasketBall</h1>
-    <ol>
-      <li><a href="bb1.html"><font color="red">Lebron</a></li>
-      <li><a href="bb2.html"><font color="red">Kyrie</a></li>
-      <li><a href="bb3.html"><font color="red">Love</a></li>
-    </ol>
-    -->
-    <h2>BasketBall</h2>
-    <p>
-      <iframe width="500" height="315" src="https://www.youtube.com/embed/2-wZBH734tU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
-    <p><a
-      href="https://www.nba.com"
-      target="_blank" title="html5 specification"
-      >NBA</a> is the <strong>best</strong> basketball league
-      <img src="basketball.jpg" width="100%">
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="bb1.html">Lebron</a></li>
+        <li><a href="bb2.html">Kyrie</a></li>
+        <li><a href="bb3.html">Love</a></li>
+      </ol><!--항목 부분-->
+      <div id="info">
+        <h2>BasketBall</h2>
+        <p>
+          <iframe width="500" height="315" src="https://www.youtube.com/embed/2-wZBH734tU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><a
+          href="https://www.nba.com"
+          target="_blank" title="html5 specification"
+          >NBA</a> is the <strong>best</strong> basketball league
+          <img src="basketball.jpg" width="100%">
+        </p>
+        </div><!--내용 부분-->
+    </div>
   </body>
   </html>

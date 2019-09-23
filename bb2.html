@@ -3,6 +3,21 @@
   <title>Kyrie</title>
   <meta charset="utf-8">
   <style>
+  #grid{
+    border: : 2px solid gray;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    border-right: 2px solid gray;
+    width:60px;
+    margin-top:0;
+    padding: 25px;
+    padding-left: 45px;
+  }
+  #info{
+    padding: 5px;
+  }
     #active{
       color: red;
     }
@@ -20,12 +35,6 @@
       margin:0px;
       padding: 20px;
     }
-    ol{
-      border-right: 2px solid gray;
-      width:60px;
-      margin-top:0;
-      padding: 25px;
-    }
     body{
       margin:0;
     }
@@ -33,11 +42,15 @@
 </head>
 <body>
   <h1><a href="index.html">BasketBall</a></h1>
-  <ol>
-    <li><a href="bb1.html">Lebron</a></li>
-    <li><a href="bb2.html" id="active">Kyrie</a></li>
-    <li><a href="bb3.html">Love</a></li>
-  </ol>
-  <h2 class="image">Kyrie</h2>
-  <img src="kyrie.jpg" width="100%">
+  <div id="grid">
+    <ol>
+      <li><a href="bb1.html">Lebron</a></li>
+      <li><a href="bb2.html" id="active">Kyrie</a></li>
+      <li><a href="bb3.html">Love</a></li>
+    </ol>
+    <div id="info">
+      <h2 class="image">Kyrie</h2>
+      <img src="kyrie.jpg" width="100%">
+    </div>
+  </div>
 </body>
